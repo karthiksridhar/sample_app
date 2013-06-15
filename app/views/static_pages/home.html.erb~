@@ -1,15 +1,11 @@
-<% provide(:title, 'Home') %>
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-	</head>
-	<body>
-		<h1>Sample App</h1>
-		<p>
-		  This is the home page for the
-		  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-		  sample application.
-		</p>
-	</body>
-</html>
+<% provide(:title, 'EdWave | Home') %>
+<h1>EDWAVE : Education --> Employment</h1>
+<ol>
+	<li>Enter profile</li>
+	<li>Look at Knowledge Map</li>
+	<li>Know where you are on the map</li>
+	<li>Find the Hottest areas</li>
+	<li>Find the right courses to get there</li>
+	<li>Land a job</li>
+	<li>Get outta this place!!</li>
+</ol>

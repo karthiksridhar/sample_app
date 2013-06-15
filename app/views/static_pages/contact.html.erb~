@@ -1,0 +1,12 @@
+<% provide(:title, 'EdWave | Contact Us') %>
+<h1>Contact Us</h1>
+<ul>
+	<li>Email: contact@edwave.co</li>
+	<li>Phone: 314 630 7268</li>
+	<li>Address: Silicon Valley, CA</li>
+	<li>Facebook Page:</li>
+	<li>LinkedIn Page:</li>
+<ul>
+	<a href="/static_pages/home">Home</a>
+	<a href="/static_pages/about">About Us</a>
+	<a href="/static_pages/help">Help</a>

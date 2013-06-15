@@ -1,17 +1,10 @@
-<% provide(:title, 'Help') %>
-<!DOCTYPE html>
-<html>
-  <head>
-	  <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  </head>
-  <body>
-    <h1>Help</h1>
-    <p>
-      Get help on the Ruby on Rails Tutorial at the
-      <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
-      To get help on this sample app, see the
-      <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
-    </p>
-  </body>
-</html>
+<% provide(:title, 'EdWave | Help') %>
+<h1>Need Help? No worries! That's what we are here for :) </h1>
+<p>How do I use the Knowledge Map?
+	<ol>
+		<li>First, just hover over the map.</li>
+		<li>You will find 4 options that appear.</li>
+		<li>So go nuts! You wanna learn? Learn. You wanna job? Get that job. You wanna see other people with skills? Go ahead! You interested in communities? Join one!</li>
+	</ol>
+</p>
 
