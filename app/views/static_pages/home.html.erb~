@@ -9,3 +9,7 @@
 	<li>Land a job</li>
 	<li>Get outta this place!!</li>
 </ol>
+	<a href="/static_pages/home">Home</a>
+	<a href="/static_pages/help">Help</a>
+	<a href="/static_pages/about">About Us</a>
+	<a href="/static_pages/contact">Contact Us</a>
