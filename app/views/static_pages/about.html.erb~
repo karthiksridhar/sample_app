@@ -1,5 +1,12 @@
-<% provide(:title, 'EdWave | About Us') %>
-<h1>About Us</h1>
+<% provide(:title, 'About Us') %>
+
+<div class="center hero-unit">
+	<h1>About Us</h1>
+</div>
+
+
+<div>
+
 <ul>
 	<li>EDWAVE:
 		<ul>
@@ -22,4 +29,9 @@
 		</ul>
 	</li>
 </ul>
+	<a href="/">Home</a>
+	<a href="/help">Help</a>
+	<a href="/about">About Us</a>
+	<a href="/contact">Contact Us</a>
+</div>
 

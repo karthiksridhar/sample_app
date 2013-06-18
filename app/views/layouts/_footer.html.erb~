@@ -1,0 +1,14 @@
+<footer class="footer">
+  <small>
+    <a href="http://linkedin.com">EdWave</a>
+    by Bharadwaj and Karthik
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About",   '#' %></li>
+      <li><%= link_to "Contact", '#' %></li>
+      <li><a href="http://linkedin.com/">News</a></li>
+    </ul>
+  </nav>
+</footer>
+
