@@ -1,0 +1,284 @@
+F.........FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.....
+
+Failures:
+
+  1) StaticPages should have the right links on the layout
+     Failure/Error: click_link "Sign up now!"
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # (eval):2:in `click_link'
+     # ./spec/requests/static_pages_spec.rb:58:in `block (2 levels) in <top (required)>'
+
+  2) User Pages profile page 
+     Failure/Error: let(:user) {FactoryGirl.create(:user)}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # C:in `new'
+     # C:in `new'
+     # C:in `object'
+     # ./spec/requests/user_pages_spec.rb:14:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  3) User Pages profile page 
+     Failure/Error: let(:user) {FactoryGirl.create(:user)}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # C:in `new'
+     # C:in `new'
+     # C:in `object'
+     # ./spec/requests/user_pages_spec.rb:14:in `block (3 levels) in <top (required)>'
+     # ./spec/requests/user_pages_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  4) User Pages signup with invalid information should not create a user
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  5) User Pages signup with invalid information after submission 
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  6) User Pages signup with invalid information after submission 
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  7) User Pages signup with valid information should create a user
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  8) User Pages signup with valid information after saving the user 
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  9) User Pages signup with valid information after saving the user 
+     Failure/Error: before {visit signup_path}
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  10) User Pages signup page 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  11) User Pages signup page 
+     Failure/Error: before { visit signup_path }
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./app/controllers/users_controller.rb:10:in `new'
+     # ./spec/requests/user_pages_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+  12) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  13) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  14) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  15) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  16) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  17) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  18) User 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  19) User when email format is invalid should be invalid
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  20) User return value of authenticate method with valid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  21) User return value of authenticate method with invalid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  22) User return value of authenticate method with invalid password 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  23) User when name is not present 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  24) User when password is not present 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  25) User email address with mixed case should be saved as all lower-case
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  26) User when email address is already taken 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  27) User when password doesn't match confirmation 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  28) User when name is too long 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  29) User with a passowrd that's too short 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  30) User when password confirmation is nil 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  31) User when email is not present 
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+  32) User when email format is valid should be valid
+     Failure/Error: @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+     ActiveRecord::StatementInvalid:
+       Could not find table 'users'
+     # ./spec/models/user_spec.rb:17:in `new'
+     # ./spec/models/user_spec.rb:17:in `block (2 levels) in <top (required)>'
+
+Finished in 1.42 seconds
+46 examples, 32 failures
+
+Failed examples:
+
+rspec ./spec/requests/static_pages_spec.rb:48 # StaticPages should have the right links on the layout
+rspec ./spec/requests/user_pages_spec.rb:17 # User Pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:18 # User Pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:26 # User Pages signup with invalid information should not create a user
+rspec ./spec/requests/user_pages_spec.rb:32 # User Pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:33 # User Pages signup with invalid information after submission 
+rspec ./spec/requests/user_pages_spec.rb:52 # User Pages signup with valid information should create a user
+rspec ./spec/requests/user_pages_spec.rb:48 # User Pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:49 # User Pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:9 # User Pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:10 # User Pages signup page 
+rspec ./spec/models/user_spec.rb:26 # User 
+rspec ./spec/models/user_spec.rb:28 # User 
+rspec ./spec/models/user_spec.rb:24 # User 
+rspec ./spec/models/user_spec.rb:25 # User 
+rspec ./spec/models/user_spec.rb:23 # User 
+rspec ./spec/models/user_spec.rb:22 # User 
+rspec ./spec/models/user_spec.rb:30 # User 
+rspec ./spec/models/user_spec.rb:48 # User when email format is invalid should be invalid
+rspec ./spec/models/user_spec.rb:102 # User return value of authenticate method with valid password 
+rspec ./spec/models/user_spec.rb:107 # User return value of authenticate method with invalid password 
+rspec ./spec/models/user_spec.rb:108 # User return value of authenticate method with invalid password 
+rspec ./spec/models/user_spec.rb:34 # User when name is not present 
+rspec ./spec/models/user_spec.rb:79 # User when password is not present 
+rspec ./spec/models/user_spec.rb:116 # User email address with mixed case should be saved as all lower-case
+rspec ./spec/models/user_spec.rb:74 # User when email address is already taken 
+rspec ./spec/models/user_spec.rb:84 # User when password doesn't match confirmation 
+rspec ./spec/models/user_spec.rb:44 # User when name is too long 
+rspec ./spec/models/user_spec.rb:94 # User with a passowrd that's too short 
+rspec ./spec/models/user_spec.rb:89 # User when password confirmation is nil 
+rspec ./spec/models/user_spec.rb:39 # User when email is not present 
+rspec ./spec/models/user_spec.rb:58 # User when email format is valid should be valid
+
+Randomized with seed 61220
+
