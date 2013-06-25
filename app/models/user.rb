@@ -10,6 +10,8 @@
 #
 
 class User < ActiveRecord::Base
+
+# Declaration of public variables	
   attr_accessible :email, :name, :password, :password_confirmation
   has_secure_password
 
